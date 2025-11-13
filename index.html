@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MinAli Restaurant — Menu</title>
+  <style>
+    :root{
+      --bg:#fffefd;
+      --card:#000000;
+      --accent:#f7ac0c;
+      --muted:#6b6b6b;
+      --shadow: 0 6px 18px rgba(0,0,0,0.06);
+      --radius:14px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#f8f8f8 0%, #ffffff 100%);color:#eca814}
+    .wrap{max-width:420px;margin:18px auto;padding:14px}
+
+    header{display:flex;gap:12px;align-items:center}
+    .brand{display:flex;flex-direction:column}
+    .brand h1{margin:0;font-size:20px;letter-spacing:0.6px}
+    .brand p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+    .hero{margin-top:12px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .hero img{display:block;width:100%;height:200px;object-fit:cover}
+
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin:14px 0 8px}
+    .section-title h2{margin:0;font-size:15px}
+    .menu{display:grid;grid-template-columns:1fr;gap:10px}
+
+    .card{background:var(--card);border-radius:12px;padding:10px;box-shadow:var(--shadow);display:flex;gap:10px;align-items:center}
+    .thumb{flex:0 0 76px;height:76px;border-radius:10px;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .info{flex:1}
+    .info h3{margin:0;font-size:15px}
+    .info p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+    .price{font-weight:700;color:var(--accent);margin-left:8px}
+
+    .row{display:flex;align-items:center;justify-content:space-between}
+
+    footer{margin:18px 0 40px;text-align:center;color:var(--muted);font-size:13px}
+
+    .pill{display:inline-block;background:linear-gradient(90deg, rgba(255,255,255,0.7), rgba(255,255,255,0.5));padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted);box-shadow:0 4px 10px rgba(0,0,0,0.04)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="width:56px;height:56px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)">
+        <img src="images/logo2.png" alt="MinAli logo" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div class="brand">
+        <h1>MinAli Restaurant</h1>
+        <p class="pill">“Tarixi reseptlər, yenilikçi təqdimat”</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="images/restaran.jpeg" alt="restaurant interior">
+      <img src="images/piti.jpeg" alt="restaurant interior">
+    </section>
+
+    <!-- Salatlar -->
+    <div class="section-title"><h2>Salatlar</h2></div>
+    <div class="menu">
+      <article class="card"><div class="thumb"><img src="images/coban salati.webp" alt="Paytaxt salatı"></div><div class="info"><div class="row"><h3>Coban salatı</h3><div class="price">7 AZN</div></div><p>Pomidor, xiyar, bibər, soğan və göyərti ilə hazırlanan ənənəvi Azərbaycan çoban salatı</p></div></article>
+      <article class="card"><div class="thumb"><img src="images/yunan salati.jpg" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Sezar Salatı</h3><div class="price">9 AZN</div></div><p>Toyuq filesi, təzə kahı, kruton və parmesan pendiri ilə hazırlanmış klassik Sezar salatı.</p></div></article>
+       <article class="card"><div class="thumb"><img src="images/narli.jpg" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Narlı pomidor Salatı</h3><div class="price">9 AZN</div></div><p>Pomidor, nar dənələri və göyərti ilə hazırlanan təravətli salat.</p></div></article>
+    </div>
+
+<!-- Əlavələr -->
+    <div class="section-title"><h2>Əlavələr</h2></div>
+    <div class="menu">
+      <article class="card"><div class="thumb"><img src="images/ag kelem.jpg" alt="Paytaxt salatı"></div><div class="info"><div class="row"><h3>Ağ kələm turşusu</h3><div class="price">4 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/qirmizi kelem.jpg" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Qırmızı kələm turşusu</h3><div class="price">4 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/sirce sogan.jpg" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Sirçə soğan</h3><div class="price">4 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/qatiq.jpg" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Qatıq</h3><div class="price">3 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/pendir.jpg" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Pendir</h3><div class="price">6 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/acika.jpeg" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Acika</h3><div class="price">3 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/pamidor xiyar.webp" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Pamidor xiyar</h3><div class="price">4 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/tursu assorti.avif" alt="Sezar salatı"></div><div class="info"><div class="row"><h3>Turşu assorti</h3><div class="price">10 AZN</div></div><p></p></div></article>
+    </div>
+
+    <!-- İçkilər -->
+    <div class="section-title"><h2>Soyuq və isti İçkilər</h2></div>
+    <div class="menu">
+      <article class="card"><div class="thumb"><img src="images/duses.jpg" alt="Çay"></div><div class="info"><div class="row"><h3>Duşes</h3><div class="price">5 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/terxun.jpg" alt="Qəhvə"></div><div class="info"><div class="row"><h3>Tərxun</h3><div class="price">5 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/qazli sirab.jpg" alt="Çay"></div><div class="info"><div class="row"><h3>Qazlı sirab</h3><div class="price">4 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/qazsiz sirab.webp" alt="Qəhvə"></div><div class="info"><div class="row"><h3>Qazsız sirab</h3><div class="price">4 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/cay.jpg" alt="Çay"></div><div class="info"><div class="row"><h3> Çay</h3><div class="price">15 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/samavar cay.jpg" alt="Qəhvə"></div><div class="info"><div class="row"><h3>Samavar Çayı</h3><div class="price">30 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/destgah.jpg" alt="Çay"></div><div class="info"><div class="row"><h3>Samavar destgahı</h3><div class="price">50 AZN</div></div><p></p></div></article>
+    </div>
+
+    <!-- Sulu Yeməklər -->
+    <div class="section-title"><h2>Sulu Yeməklər</h2></div>
+    <div class="menu">
+      <article class="card"><div class="thumb"><img src="images/toyuq sorbasi.jpg" alt="Toyuq şorbası"></div><div class="info"><div class="row"><h3>Toyuq Şorbası</h3><div class="price">7 AZN</div></div><p>Toyuq əti, kartof, yerkökü və soğanla hazırlanmış dadlı toyuq şorbası</p></div></article>
+      <article class="card"><div class="thumb"><img src="images/merci.jpg" alt="Mərci şorbası"></div><div class="info"><div class="row"><h3>Mərci Şorbası</h3><div class="price">7 AZN</div></div><p>Qırmızı mərci, yerkökü və soğanla bişirilmiş ətirli və qidalandırıcı mərci şorbası</p></div></article>
+       <article class="card"><div class="thumb"><img src="images/girs.jpg" alt="Girs"></div><div class="info"><div class="row"><h3>Girs</h3><div class="price">9 AZN</div></div><p>Qiymə ilə doldurulmuş xəmir cibikləri, ət bulyonunda bişirilmiş ənənəvi girs yeməyi</p></div></article>
+    </div>
+
+    <!-- Qazan Yeməkləri -->
+    <div class="section-title"><h2>Qazan Yeməkləri</h2></div>
+    <div class="menu">
+      <article class="card"><div class="thumb"><img src="images/quzu qovurma.jpg" alt="Quzu qovurma"></div><div class="info"><div class="row"><h3>Quzu qovurma</h3><div class="price">40 AZN</div></div><p>Ətirli ədviyyatlarla bişirilmiş quzu ətindən hazırlanan qovurma.</p></div></article>
+      <article class="card"><div class="thumb"><img src="images/toyuq cigirtmasi.jpg" alt="Toyuq çığırtması"></div><div class="info"><div class="row"><h3>Toyuq çığırtması</h3><div class="price">40 AZN</div></div><p>Qızardılmış toyuq filesi, ədviyyat və sous ilə təqdim olunur.</p></div></article>
+      <article class="card"><div class="thumb"><img src="images/tabaka.webp" alt="Tabaka"></div><div class="info"><div class="row"><h3>Tabaka</h3><div class="price">35 AZN</div></div><p>Qızardılmış toyuq və ya quzu əti, qat-qat bişirilmiş, ədviyyatlarla zənginləşdirilmiş tabaka.</p></div></article>
+      <article class="card"><div class="thumb"><img src="images/quzu saci.jpg" alt="Quzu sacı"></div><div class="info"><div class="row"><h3>Quzu sacı</h3><div class="price">55 AZN</div></div><p>Ətirli ədviyyatlar ilə hazırlanan quzu əti, sac üzərində qızardılmış dadlı yemək</p></div></article>
+      <article class="card"><div class="thumb"><img src="images/nar qovurma.png" alt="Quzu nar qovurması"></div><div class="info"><div class="row"><h3>Quzu nar qovurması</h3><div class="price">45 AZN</div></div><p>Quzu əti nar sousu ilə bişirilərək ətirli və şirin-turş ləzzət əldə edir</p></div></article>
+    </div>
+
+    <!-- Kabablar -->
+    <div class="section-title"><h2>Kabablar</h2></div>
+    <div class="menu">
+      <article class="card"><div class="thumb"><img src="images/dana.jpg" alt="Quzu kababı"></div><div class="info"><div class="row"><h3>Dana basdırma</h3><div class="price">15 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/lule.jpg" alt="Toyuq kababı"></div><div class="info"><div class="row"><h3>Lülə kabab</h3><div class="price">11 AZN</div></div><p> </p></div></article>
+      <article class="card"><div class="thumb"><img src="images/lule.jpg" alt="Quzu kababı"></div><div class="info"><div class="row"><h3>Kabab assorti</h3><div class="price">80 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/toyuq kabab.jpg" alt="Toyuq kababı"></div><div class="info"><div class="row"><h3>Toyuq Kababı</h3><div class="price">8 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/quzu.webp" alt="Quzu kababı"></div><div class="info"><div class="row"><h3>Tikə kabab</h3><div class="price">13 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/file.webp" alt="Toyuq kababı"></div><div class="info"><div class="row"><h3>Toyuq file kabab</h3><div class="price">8 AZN</div></div><p></p></div></article>
+      <article class="card"><div class="thumb"><img src="images/terevez.jpg" alt="Toyuq kababı"></div><div class="info"><div class="row"><h3>Tərəvəz kabab</h3><div class="price">7 AZN</div></div><p></p></div></article>
+    </div>
+
+    
+
+    <footer><p>“MinAli Restaurant — Zövqünüzün ünvanı”</p></footer>
+  </div>
+</body>
+</html>
